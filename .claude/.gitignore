@@ -1,0 +1,6 @@
+# Ignore all files in .claude by default
+*
+
+# But track settings.json for the project
+!settings.json
+!.gitignore

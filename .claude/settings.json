@@ -1,0 +1,32 @@
+{
+  "description": "Project settings for webpage-md-extractor - grants full access to Claude for automated operations",
+  "settings": {
+    "prompts": {
+      "bash": {
+        "enabled": true,
+        "mode": "auto_approve_all",
+        "description": "Auto-approve all bash commands"
+      },
+      "edit": {
+        "enabled": true,
+        "mode": "auto_approve_all",
+        "description": "Auto-approve all file edits"
+      },
+      "write": {
+        "enabled": true,
+        "mode": "auto_approve_all",
+        "description": "Auto-approve all file writes"
+      }
+    },
+    "hooks": {
+      "description": "Hooks allow running commands before/after Claude operations",
+      "pre_bash": "",
+      "post_bash": "",
+      "user_prompt_submit": ""
+    }
+  },
+  "notes": {
+    "security_warning": "This configuration auto-approves all commands. Only use in trusted projects.",
+    "customization": "You can customize specific commands by replacing 'auto_approve_all' with specific patterns"
+  }
+}
